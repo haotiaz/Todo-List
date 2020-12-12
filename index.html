@@ -4,15 +4,23 @@
         <title>AZHT's Todo List</title>
     </head>
     <body>
-        <h1>Todo List</h1>
+        <div class="header">
+            <h2>Todo List</h2>
+            <form>
+                <label for="description">Event Description</label>
+                <input type="text" id="description" placeholder="Thing To Do">
+                <input type="button" onclick="newItem()" value="submit">
+            </form>
+        </div>
+        
         <ul id="todo-list">
 
         </ul>
-        <form>
-            <label for="description">Event Description</label>
-            <input type="text" id="description">
-            <input type="button" onclick="submitItem()" value="submit">
-        </form>
+        <button type="button" id="remove_items" onclick="removeAll()">Clear</button>
+        <footer>
+            From azht
+        </footer>
+        
     </body>
     <script src="script.js"></script>
 </html>
