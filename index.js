@@ -15,6 +15,7 @@ function newItem(){
         item.append(descriptionText);
         var close = document.createElement("span");
         close.innerText = "\u00D7";
+        close.class="close-button";
         close.onclick=function(){
             var to_delete = this.parentElement;
             var parent=to_delete.parentElement;
