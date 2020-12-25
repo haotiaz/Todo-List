@@ -35,6 +35,7 @@
     border:0px;
     text-indent: 10px;
     font-size:18px;
+    
 }
 
 .main .header .input-box .btn{
@@ -52,19 +53,59 @@
     background-color: #bbb;
 }
 
-
-
-
-.list-body{
-    margin: auto;
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-footer{
-    margin:auto;
-    text-align: center;
+ul li{
+    cursor:pointer;
+    padding:12px 8px 12px 40px;
+    background:#eee;
+    font-size: 18px;
+    transition:#eee;
+    position: relative;
 }
 
-.close-button{
-    cursor: hand;
+ul li:nth-child(odd){
+    background: #f9f9f9;
 }
 
+ul li:hover{
+    background:#ddd;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    background:#888;
+    color:#fff;
+}
+
+ul li.checked::before{
+    content:'';
+    position: absolute;
+    border-width: 0px 2px 2px 0px;
+    border-color: white;
+    border-style: solid;
+    height:15px;
+    width:7px;
+    transform: rotate(45deg);
+    top: 13px;
+    left: 16px;
+}
+
+.close{
+    position: absolute;
+    right:0;
+    top:0px;
+    padding: 9px 16px 15px 16px;
+    font-size: 30px;
+    height:100%;
+    line-height: 100%;
+}
+
+.close:hover{
+    background-color: #f44336;
+    color: white;
+}

@@ -1,7 +1,18 @@
-var state = {
-    num: 0,
-    items: []
-}
+
+// var list=document.getElementsByTagName("ul")[0];
+// list.addEventListener('click',function(event){
+//     if(event.target.tagName="LI"){
+//         event.target.classList.toggle("checked");
+//     }
+// },false);
+
+var list = document.querySelector('ul');
+list.addEventListener('click', function (ev) {
+    if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+    }
+}, false);
+
 
 function newItem(){
     var list=document.getElementById("todo-list");
@@ -15,7 +26,7 @@ function newItem(){
         item.append(descriptionText);
         var close = document.createElement("span");
         close.innerText = "\u00D7";
-        close.class="close-button";
+        close.classList.toggle("close");
         close.onclick=function(){
             var to_delete = this.parentElement;
             var parent=to_delete.parentElement;
@@ -27,6 +38,8 @@ function newItem(){
     }
     
 }
+
+
 
 
 function removeAll(){
