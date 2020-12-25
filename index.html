@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>ZHT's Todo List</title>
-        <script src="index.js"></script>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -17,20 +16,22 @@
             </div>
             <div class="list-body">
                 <ul id="todo-list">
-                    <li>Haha<span class="close" onclick="remove">&times</span></li>
-                    <li class="checked">Xixi<span class="close" onclick="remove">&times</span></li>
+                    <li>Haha</li>
+                    <li class="checked">Xixi</li>
                 </ul>
-                <button type="button" id="remove_items" onclick="removeAll()">Clear</button>
+                <div class="clear" id="remove_items" onclick="removeAll()">Clear</div>
             </div>
             
             
             
             <div class="footer">
                 <a href="https://www.4399.com">zht</a>
+                <div>Email: <a href="mailto: haotianz@umich.edu">haotianz@umich.edu</a></div>
             </div>
         </div>
         
         
     </body>
+    <script src="index.js"></script>
     
 </html>

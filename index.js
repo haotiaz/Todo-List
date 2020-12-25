@@ -6,6 +6,21 @@
 //     }
 // },false);
 
+var nodeList=document.getElementsByTagName("LI");
+for(let i=0;i<nodeList.length;i++){
+    var close = document.createElement("SPAN");
+    close.innerText = "\u00D7";
+    close.className="close";
+    close.onclick = function () {
+        var to_delete = this.parentElement;
+        var parent = to_delete.parentElement;
+        parent.removeChild(to_delete);
+    }
+    nodeList[i].appendChild(close);
+}
+
+
+
 var list = document.querySelector('ul');
 list.addEventListener('click', function (ev) {
     if (ev.target.tagName === 'LI') {
