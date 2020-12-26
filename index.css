@@ -67,6 +67,7 @@ ul li{
     font-size: 18px;
     transition:#eee;
     position: relative;
+    height:49px;
 }
 
 ul li:nth-child(odd){
@@ -130,4 +131,15 @@ ul li.checked::before{
     height: 100px;
     background: aquamarine;
     border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+
+.footer .footer-container{
+    padding-top: 25px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
 }
